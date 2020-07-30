@@ -95,6 +95,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-item-link:hover {
   color: var(--hover-text-color);
@@ -146,6 +147,7 @@ img {
   font-size: 14px;
   color: #757575;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list-item-icon {
@@ -153,6 +155,7 @@ img {
   height: 14px;
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-item-link:hover .contacts-list-item-icon,
 .contacts-list-item-link:focus .contacts-list-item-icon {
@@ -219,6 +222,9 @@ img {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   background-color: #f5f4fa;
@@ -249,6 +255,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+
 .capabillity-list {
   display: flex;
   padding-left: 0;
@@ -298,15 +305,27 @@ img {
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
-  margin-top: 27px;
-  margin-bottom: 27px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   /*добавил тень для читабельности*/
+}
+
+.what-we-do-wrapper {
+  position: absolute;
+  top: 0;
+
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .what-we-do-list {
   display: flex;
 }
 .what-we-do-list-item {
+  position: relative;
+
   width: 370px;
+  height: auto;
 }
 .what-we-do-list-item:not(:last-child) {
   margin-right: 30px;
